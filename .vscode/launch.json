@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "▶️ START VIBE CODING",
+      "type": "node",
+      "request": "launch",
+      // We use a dummy command because the real work is done by the 'preLaunchTask'
+      "runtimeExecutable": "echo", 
+      "windows": { "runtimeExecutable": "cmd" },
+      "args": ["Vibe Coding Started"],
+      
+      // THIS is the magic. It forces our script to run before "debugging" starts.
+      "preLaunchTask": "🟢 START VIBE CODING",
+      
+      "console": "internalConsole",
+      "internalConsoleOptions": "neverOpen"
+    }
+  ]
+}
